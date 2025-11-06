@@ -1,6 +1,7 @@
-﻿using System.Text;
-using System;
+﻿using System;
+using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 
 class Program
 {
@@ -16,9 +17,9 @@ class Program
         { 'A', 0 }, { 'B', 1 }, { 'C', 2 }, { 'D', 3 }
     };
 
-    private static readonly char[] TargetChar = ['A', 'B', 'C', 'D'];
-    private static readonly int[] CrossPos = [2, 4, 6, 8];
-    private static readonly int[] StopPositions = [0, 1, 3, 5, 7, 9, 10];
+    private static readonly char[] TargetChar = { 'A', 'B', 'C', 'D' };
+    private static readonly int[] CrossPos = { 2, 4, 6, 8 };
+    private static readonly int[] StopPositions = { 0, 1, 3, 5, 7, 9, 10 };
 
 
     private static int Solve(List<string> lines)
